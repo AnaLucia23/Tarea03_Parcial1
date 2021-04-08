@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="librerias/jquery/jquery-3.5.1.js"></script>
+    <script src="librerias/popper/popper.min.js"></script>
+    <script src="librerias/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="librerias/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="recursos/css/estilos.css">
+</head>
+
+
+<body>
+    <!--Barra de navegación horizontal-->
+    <section id="banner" class="container-fluid p-3">
+    <nav class="navbar navbar-expand-sm navbar-dark   bg-secondary fixed-top row">
+        
+        <a class="navbar-brand col-md-10" href="">Nuestras Playas<img class="rounded-circle" src="recursos/images/images/sanJuan.jpg">
+        </a>
+
+        <ul class="navbar-nav col-sm-2">
+
+            <li class="nav-item" class="d-flex">
+                <a class="nav-link" href="#">Home <i class="fas fa-home"></i></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact <i class="fas fa-address-card"></i></a>
+            </li>
+
+        </ul>
+    </nav>
+</section>
+
+    <!--Barra de navegación vertical-->
+    <section class="mt-5">
+    <nav class="navbar bg-secondary position-fixed" id="navVertical">
+        <ul>
+            <li>
+                <a href="#playas">Playas</a>
+            </li>
+            <li>
+                <a href="#lagos">Lagos</a>
+            </li>
+            <li>
+                <a href="#lagunas">Lagunas</a>
+            </li>
+            <li>
+                <a href="#otros">Otros</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!--Seccion Central-->
+    <section id="central">
+    <header>
+        <h1 class="pt-3 text-center">Las exóticas playas de Nicaragua</h1>
+    </header>
+
+    <main>
+        <section class="d-inline-flex justify-content-around" id="tarjetas">
+        <div class="jumbotron bg-light">
+            <h4>Playas del Pacífico</h4>
+            <p>Descripción</p>
+            <button type="button" class="btn btn-outline-primary">Más Info</button>
+        </div>
+
+        <div class="jumbotron bg-light mx-5">
+            <h4>Playas del Atlántico</h4>
+            <p>Descripción</p>
+            <button type="button" class="btn btn-outline-danger">Más Info</button>
+        </div>
+
+        <div class="jumbotron bg-light">
+            <h4>Lagos y Lagunas</h4>
+            <p>Descripción</p>
+            <button type="button" class="btn btn-outline-success">Más Info</button>
+        </div>
+    </section>
+    <br><br>
+
+    <section id="graficos" class="d-inline-flex justify-content-around">
+
+    <section  class="accordion bg-light">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+             Océanos
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">Informacióm
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Lagos y Lagunas
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body"> Informacióm
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Otros
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 Informacióm
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+        <div class="container"> 
+            <table id="tablarayada" class="table table-striped bg-light">
+                <thead>
+                    <tr>
+                        <th>Región</th>
+                        <th>Playas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Atlántico</td>
+                        <td>Little Corn Island</td>
+                    </tr>
+                    <tr>
+                        <td>Atlántico</td>
+                        <td>Rio Escondido</td>
+                        
+                    </tr>
+                    <tr>  <td>Laguna</td>
+                        <td>Catarina</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Todas son playas maravillosas</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </div>
+    </section>
+    </main>
+    <footer class="text-center">
+        <ul class="d-inline-flex">
+            <li><i class="fab fa-facebook-square"></i></li>
+            <li><i class="fab fa-twitter-square"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-youtube-square"></i></li>
+        </ul>
+    </footer>
+</section>
+</section>
+    
+</body>
+
+</html>
